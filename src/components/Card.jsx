@@ -1,7 +1,7 @@
 import briefcase from '../assets/svgs/briefcase.svg'
 import threedots from '../assets/svgs/threedots.svg';
 import smallVerticalStrokes from '../assets/svgs/smallVerticalStroke.svg';
-import clock from '../assets/svgs/clock.svg';
+import calendar from '../assets/svgs/calendar.svg';
 import linkIcon from '../assets/svgs/linkIcon.svg';
 import Avatar from 'react-avatar'; 
 
@@ -21,7 +21,7 @@ export default function Card({cardDetails}) {
                             <div className='card-text'>{cardDetails.purpose}</div>
                             <div className='smallVerticalStroke'><img src={smallVerticalStrokes} alt="stroke-icon"/></div>
                             <div className='card-date'>
-                                <div className='clock-img'><img src={clock} alt="clock-icon"/></div>
+                                <div className='calendar-img'><img src={calendar} alt="calendar-icon"/></div>
                                 <div className='card-date-text'>{date}</div>
                             </div>
                         </div>

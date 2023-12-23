@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -10,6 +11,9 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
+}
+.assessmentStats{
+    padding-left: 20px;
 }
 .assessmentStats,.assessmentStatsOverview{
     width: 100%;
@@ -30,7 +34,7 @@ body{
 .assessmentStatsSubHeading{
     color: var(--text-100, #1C4980);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -39,7 +43,7 @@ body{
 .assessmentStatsData{
     color: var(--text-100, #1C4980);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -49,7 +53,7 @@ body{
     color: var(--status-success, #05C165);
     margin-left: 4px;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -68,7 +72,7 @@ background: var(--accent-purple-light, #EBE8FD);
 .assessmentStatsText{
     color: #1C4980;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -82,6 +86,7 @@ background: var(--accent-purple-light, #EBE8FD);
     background-color: #FFF;
     position: relative;
     z-index: 1;
+    margin-left: 20px;
 }
 .assessmentCards{
     margin-top: 16px;
@@ -132,7 +137,7 @@ background: var(--accent-purple-light, #EBE8FD);
     text-align: center;
     color: var(--text-100, #1C4980);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -153,7 +158,7 @@ background: var(--accent-purple-light, #EBE8FD);
     border: 1px solid var(--accent-new-red, #D63500);
     background: var(--accent-red-light, #FBEBEA);
     color: var(--accent-new-red, #D63500);
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 500;
@@ -170,7 +175,7 @@ background: var(--accent-purple-light, #EBE8FD);
 .topBar-heading{
     color: var(--text-100, #1C4980);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -178,7 +183,7 @@ background: var(--accent-purple-light, #EBE8FD);
 }
 .topBar-subheading{
     color: var(--text-85, #3E6493);
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -197,6 +202,8 @@ background: var(--accent-purple-light, #EBE8FD);
 }
 .subheading{
     margin-right: 20px;
+}
+#my-assessment{
     color: #0073E6;
 }
 .topBar-subheading{
@@ -223,7 +230,7 @@ background: var(--accent-purple-light, #EBE8FD);
 .mainCont-heading{
     color: var(--text-100, #1C4980);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -254,7 +261,7 @@ background: var(--accent-purple-light, #EBE8FD);
     text-align: center;
     color: var(--text-100, #1C4980);
     text-align: center;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -285,21 +292,21 @@ background: var(--accent-purple-light, #EBE8FD);
     margin-bottom: 16px;
     padding-bottom: 16px;
 }
-.smallVerticalStroke,.clock-img,.card-date-info,.card-date-text,.card-date,.more-card-info,.card-sub-info,.card-share-info,.card-share-btn,.card-share-avatars{
+.smallVerticalStroke,.calendar-img,.card-date-info,.card-date-text,.card-date,.more-card-info,.card-sub-info,.card-share-info,.card-share-btn,.card-share-avatars{
     display: flex;
     align-items: center;
 }
 .smallVerticalStroke{
     margin: 0px 10px;
 }
-.clock-img{
+.calendar-img{
     margin-right: 4px;
 }
 
 .card-text{
     color: var(--text-100, #1C4980);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -308,7 +315,7 @@ background: var(--accent-purple-light, #EBE8FD);
 .card-sub-text{
     color: var(--text-100, #1C4980);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -316,7 +323,7 @@ background: var(--accent-purple-light, #EBE8FD);
 }
 .card-date-text{
     color: var(--primary-50, #8DA4BF);
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -339,7 +346,7 @@ background: var(--accent-purple-light, #EBE8FD);
     background: var(--text-white, #FFF);
     color: #1C4980;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -350,7 +357,7 @@ background: var(--accent-purple-light, #EBE8FD);
 .card-share-avatars{
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -395,7 +402,7 @@ background: var(--accent-purple-light, #EBE8FD);
     padding: 20px 30px;
     color: var(--text-100, #1C4980);
     text-align: center;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -415,7 +422,7 @@ background: var(--accent-purple-light, #EBE8FD);
     border: 1px solid var(--system-stroke-2, #DADCE0);
     background: #FFF;
     color: var(--text-100, #1C4980);
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -424,7 +431,7 @@ background: var(--accent-purple-light, #EBE8FD);
 .formBody .input input,select, input::placeholder{
     width: 100%;
     color: var(--text-100, #1C4980);
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -476,7 +483,7 @@ background: var(--accent-purple-light, #EBE8FD);
     background: var(--secondary-1, #0073E6);
     border: none;
     color: #FFF;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -507,14 +514,14 @@ background: var(--accent-purple-light, #EBE8FD);
     border-radius: 22px;
     background: var(--accent-blue-light, #DDEDFF);
     color: var(--text-100, #1C4980);
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 .toast-text{
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -562,7 +569,7 @@ background: var(--accent-purple-light, #EBE8FD);
 .mobile .subheading{
     width: 50%;
     color: var(--text-85, #3E6493);
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -638,7 +645,7 @@ background: var(--accent-purple-light, #EBE8FD);
     width: 100%;
     color: var(--primary-100, #1C4980);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -667,7 +674,7 @@ background: var(--accent-purple-light, #EBE8FD);
     justify-content: center;
     color: var(--text-100, hsl(0, 93%, 48%));
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: "Inter",sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
