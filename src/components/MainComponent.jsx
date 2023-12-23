@@ -1,10 +1,9 @@
+import React from "react";
 import navigationBar from "../assets/svgs/navigation.svg";
 import desktopIcon from "../assets/svgs/desktopIcon.svg";
 import mobile from "../assets/svgs/mobile.svg";
 import verticalStroke from "../assets/svgs/verticalStroke.svg";
 import { NavLink, Outlet } from "react-router-dom";
-
-import React from "react";
 
 export default function MainComponent({ showSideBar, setShowSideBar }) {
   function showSideBarHandler() {

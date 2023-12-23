@@ -46,7 +46,7 @@ function Form({ form, setForm, assessment, setAssessment }) {
     return;
   }
 
-  //Function to detect when the Enter Key is pressed to store the different skills
+  //Function for store the different skills
   function keyChangeHandler(e) {
     if (e.key === "Enter") {
       if (skills.includes(skillValue.trim())) {
@@ -58,7 +58,6 @@ function Form({ form, setForm, assessment, setAssessment }) {
     }
   }
 
-  //Function to add the newly created assessment in the existing list of the assessments
   function addAssessment(e) {
     const assessmentObj = {
       name,
@@ -68,7 +67,7 @@ function Form({ form, setForm, assessment, setAssessment }) {
       date,
     };
 
-    const regex = new RegExp("[0-9]{2}:[0-9]{2}:[0-9]{2}"); //regex expression for checking the duration of the assessment
+    const regex = new RegExp("[0-9]{2}:[0-9]{2}:[0-9]{2}");
     if (
       name.length > 0 &&
       purpose.length > 0 &&
@@ -185,21 +184,7 @@ function Form({ form, setForm, assessment, setAssessment }) {
             <div className="formItem">
               <div>Skills</div>
               <div className="input">
-                <div>
-                  <input
-                    type="text"
-                    name="skills"
-                    id="skills"
-                    placeholder="Type here"
-                    value={skillValue}
-                    onChange={(e) => onChangeHandler(e, "skills")}
-                    onKeyDown={(e) => keyChangeHandler(e)}
-                  />
-                  <button type="button" onClick={addSkill}>
-                    Add Skills
-                  </button>
-                </div>
-                <div className="skillsBox">
+              <div className="skillsBox">
                   {skills.length > 0 ? (
                     skills.map((element, key) => {
                       return (
@@ -215,6 +200,36 @@ function Form({ form, setForm, assessment, setAssessment }) {
                     <></>
                   )}
                 </div>
+                <div>
+                  <input
+                    type="text"
+                    name="skills"
+                    id="skills"
+                    placeholder="Type here"
+                    value={skillValue}
+                    onChange={(e) => onChangeHandler(e, "skills")}
+                    onKeyDown={(e) => keyChangeHandler(e)}
+                  />
+                  {/* <button type="button" onClick={addSkill}>
+                    Add Skills
+                  </button> */}
+                </div>
+                {/* <div className="skillsBox">
+                  {skills.length > 0 ? (
+                    skills.map((element, key) => {
+                      return (
+                        <SkillBox
+                          skill={element}
+                          key={key}
+                          skills={skills}
+                          setSkills={setSkills}
+                        />
+                      );
+                    })
+                  ) : (
+                    <></>
+                  )}
+                </div> */}
               </div>
             </div>
             <div className="formItem">

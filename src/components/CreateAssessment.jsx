@@ -1,9 +1,9 @@
+import React from "react";
 import addIcon from "../assets/svgs/addIcon.svg";
 import "../styles/style.css";
 
-import React from "react";
-
 function CreateAssessment({ form, setForm }) {
+  
   return (
     <div className="card create-Card">
       <div
